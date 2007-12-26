@@ -1,0 +1,68 @@
+perl-Tcl
+------------------------------------------
+The Tcl extension provides a small but complete interface into libtcl 
+and any other Tcl-based library. It lets you create Tcl interpreters (as 
+perl5 objects), bind in commands to them (either perl subroutines or C 
+functions dynamically loaded with the DynaLoader extension) and execute 
+Tcl code in those interpreters.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  perl-5.8.8-4
+  tcl-8.4.16-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  perl-5.8.8-4
+
+Canonical website:
+  http://search.cpan.org/dist/Tcl/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/V/VK/VKON/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Tcl-0.95-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Tcl-0.95-X.cygport all
+
+This will create:
+  /usr/src/perl-Tcl-0.95-X-src.tar.bz2
+  /usr/src/perl-Tcl-0.95-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-Tcl.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Tcl.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/Tcl.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/Tcl.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/libTcl.dll.a
+  /usr/share/doc/Cygwin/perl-Tcl-0.95.README
+  /usr/share/doc/perl-Tcl-0.95/ChangeLog
+  /usr/share/doc/perl-Tcl-0.95/Changes
+  /usr/share/doc/perl-Tcl-0.95/README
+  /usr/share/man/man3/Tcl.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/Tcl.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.95-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
