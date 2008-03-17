@@ -8,17 +8,15 @@ Tcl code in those interpreters.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  perl-5.8.8-4
+  perl-5.10.0-3
   tcl-8.4.16-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.9-1
   gcc-core-3.4.4-3
   make-3.81-1
-  perl-5.8.8-4
 
 Canonical website:
   http://search.cpan.org/dist/Tcl/
@@ -43,22 +41,20 @@ This will create:
 
 Files included in the binary package:
 
-  /etc/postinstall/perl-Tcl.sh
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Tcl.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/.packlist
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/Tcl.bs
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/Tcl.dll
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Tcl/libTcl.dll.a
-  /usr/share/doc/Cygwin/perl-Tcl-0.95.README
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Tcl.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Tcl/.packlist
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Tcl/Tcl.dll
   /usr/share/doc/perl-Tcl-0.95/ChangeLog
   /usr/share/doc/perl-Tcl-0.95/Changes
   /usr/share/doc/perl-Tcl-0.95/README
   /usr/share/man/man3/Tcl.3pm.gz
-  /usr/share/perl/cygwin-pods/5.8/Tcl.pod
 
 ------------------
 
 Port Notes:
+
+----- version 0.95-2 -----
+Rebuilt for perl-5.10.
 
 ----- version 0.95-1 -----
 Initial release for Cygwin.
