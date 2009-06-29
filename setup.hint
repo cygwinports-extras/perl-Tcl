@@ -1,5 +1,5 @@
 category: Perl Tcl
-requires: cygwin perl tcl
+requires: perl tcl
 sdesc: "Perl Tcl language interpreter"
 ldesc: "The Tcl extension provides a small but complete interface into 
 libtcl and any other Tcl-based library. It lets you create Tcl 
